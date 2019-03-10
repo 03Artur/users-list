@@ -1,0 +1,31 @@
+@mixin flex-column(){
+  display: flex;
+  flex-direction: column;
+}
+
+.PersonList-container{
+  @include flex-column();
+width: 100%;
+  background-color: white;
+}
+
+.PersonList-items-container{
+  @include flex-column();
+  width: 100%;
+
+}
+
+.PersonList-selected-items-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: #ACB8C5;
+  font-weight: bold;
+}
+
+.PersonList-selected-item{
+  color: #48C1C2;
+  padding: 0 5px;
+
+}

@@ -1,6 +1,14 @@
+body{
+  background-color: #E6EAEE;
+  height: 100%;
+}
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

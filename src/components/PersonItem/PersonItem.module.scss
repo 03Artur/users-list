@@ -1,0 +1,90 @@
+$font: sans-serif;
+$person-ite-height:70px;
+
+.PersonItem-container {
+  font-family: $font;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  //height: 60px;
+  width: 100%;
+  flex-grow: 1;
+  border-top: #E9ECF0 solid 1px;
+  background-color: white;
+}
+
+
+.PersonItem-image {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px 10px;
+
+}
+
+.PersonItem-information-container {
+  flex: 1;
+  padding-left: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.PersonItem-fullName {
+  color:  #0B3157;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.PersonItem-level{
+  color:#8598AB;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+
+.PersonItem-select-button {
+margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+
+
+  img{
+    width: 50%;
+  }
+  label{
+    background-color: #DBE0E6;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+
+  }
+   input[type="checkbox"]:checked + label {
+    background-color: #48C1C2;
+     border-color: #48C1C2;
+
+  }
+
+
+
+}
+
+
+
+
